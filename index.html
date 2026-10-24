@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fffaf5" />
+  <meta name="description" content="Good food, on its way. Order fresh favorites from Juniper Kitchen." />
+  <title>Juniper Kitchen — food, on its way</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Juniper Kitchen home"><span class="brand-mark">j<span>.</span></span><span>juniper<span class="brand-light"> kitchen</span></span></a>
+    <button class="location" id="locationButton"><span class="pin">⌖</span><span><small>Delivering to</small><strong>Brooklyn, NY <span class="chevron">⌄</span></strong></span></button>
+    <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Find something delicious..." aria-label="Search menu" /><kbd>⌘ K</kbd></label>
+    <button class="account" id="accountButton" aria-label="Your account"><span class="account-icon">☺</span><span>Log in</span></button>
+    <button class="mobile-bag" id="mobileBag" aria-label="Open your basket">Bag <b id="mobileCount">0</b></button>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> YOUR NEIGHBORHOOD KITCHEN</div><h1>Good food,<br />on its <em>way.</em></h1><p>Little moments taste better with something delicious. Made fresh, delivered with love.</p><div class="hero-meta"><span><b>✦</b> 4.9 <small>(2.4k+ reviews)</small></span><i></i><span>◷ &nbsp;20–30 min</span><i></i><span>♧ &nbsp;Free delivery over $25</span></div><a href="#menu" class="hero-cta">Explore the menu <span>↓</span></a></div>
+      <div class="hero-art"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1300&q=88" alt="A colorful fresh bowl with greens, grains, and vegetables" /><div class="art-note"><span class="note-icon">✳</span><span><strong>Freshly made</strong><small>Always, every day</small></span></div><div class="art-sticker"><span>MADE WITH</span><strong>♥</strong><span>GOODNESS</span></div></div>
+    </section>
+    <section class="menu-section" id="menu">
+      <div class="section-heading"><div><div class="eyebrow">THE GOOD STUFF</div><h2>What sounds <em>good?</em></h2></div><a class="view-all" href="#menu">View full menu <span>↗</span></a></div>
+      <nav class="categories" id="categories" aria-label="Filter menu by category"></nav>
+      <div class="menu-layout"><div class="menu-grid" id="menuGrid"></div><aside class="cart" id="cart"><div class="cart-heading"><div><div class="eyebrow">YOUR ORDER</div><h3>Your bag <span id="cartCount">(0)</span></h3></div><span class="bag-icon">♧</span></div><div class="cart-items" id="cartItems"></div><div class="empty-cart" id="emptyCart"><div class="empty-illustration">🥡</div><strong>Your bag is looking hungry</strong><p>Add something delicious to get started.</p></div><div class="cart-bottom" id="cartBottom" hidden><div class="delivery-progress"><span>✦</span><div><strong id="deliveryMessage">Add $25.00 for free delivery</strong><div class="progress-track"><i id="progressBar"></i></div></div></div><div class="subtotal"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div><div class="fee-row"><span>Delivery</span><span id="deliveryFee">$2.99</span></div><button class="checkout" id="checkoutButton">Go to checkout <span id="checkoutTotal">$0.00</span><b>→</b></button><p class="secure-note">🔒 &nbsp;Secure checkout · Taxes calculated at checkout</p></div></aside></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">j<span>.</span></span><span>juniper<span class="brand-light"> kitchen</span></span></a><span>Made with care in Brooklyn. © 2025 Juniper Kitchen</span><a href="#top">Back to top ↑</a></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close dialog">×</button><div class="modal-symbol" id="modalSymbol">✳</div><div class="eyebrow">JUNIPER KITCHEN</div><h2 id="modalTitle">You're almost there.</h2><p id="modalText">Sign in to make your next meal a little easier.</p><form id="loginForm"><label>Email address<input type="email" placeholder="you@example.com" required /></label><button class="checkout" type="submit">Continue with email <b>→</b></button></form><p class="modal-foot">By continuing, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p></section></div>
+  <script src="app.js"></script>
+</body>
+</html>
